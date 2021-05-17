@@ -1,0 +1,52 @@
+/* Resets/overrides */
+:root {
+  background-color: hsl(180, 20%, 90%);
+  font-size: 16px;
+  font-family: "Segoe UI", Ubuntu, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: calc(1em * 0.5) 0;
+}
+
+/* Monospace where it's needed */
+.segment > .segment-name,
+.segment > .segment-value,
+#base,
+#result {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Additional styling */
+#base:invalid {
+  outline: 1px solid red;
+}
+
+section {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid grey;
+}
+
+.segment {
+  padding: 0.125rem 0;
+}
+
+.segment > .segment-delete {
+  color: red;
+}
+
+#parameter_add {
+  color: green;
+}
