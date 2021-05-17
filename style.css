@@ -1,4 +1,8 @@
 /* Resets/overrides */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 :root {
   background-color: hsl(180, 20%, 90%);
   font-size: 16px;
@@ -20,6 +24,36 @@ h6 {
   padding: calc(1em * 0.5) 0;
 }
 
+button {
+  border-radius: 0;
+  border: 1px solid grey;
+  background-color: hsl(0, 0%, 90%);
+  cursor: pointer;
+  /* padding: 0.25rem; */
+  vertical-align: middle;
+}
+
+button:hover {
+  box-shadow: 0 0 1px grey;
+}
+
+button:active {
+  box-shadow: 0 0 5px grey inset;
+}
+
+input {
+  vertical-align: middle;
+  height: 1em;
+  border-radius: 0;
+  padding: 0.5rem;
+  border: 1px solid hsl(0, 0%, 50%);
+  margin: 0;
+}
+
+a, a:visited {
+  color: hsl(219, 100%, 58%);
+}
+
 /* Monospace where it's needed */
 .segment > .segment-name,
 .segment > .segment-value,
@@ -30,23 +64,36 @@ h6 {
 
 /* Additional styling */
 #base:invalid {
-  outline: 1px solid red;
+  outline: 1px solid hsl(0, 100%, 50%);
 }
 
 section {
   padding: 1rem;
   margin: 0.5rem 0;
-  border: 1px solid grey;
+  border: 1px solid hsl(0, 0%, 50%);
 }
 
-.segment {
-  padding: 0.125rem 0;
+.segment > .segment-name {
+  background-color: hsl(0, 0%, 91%);
+}
+
+.segment > .segment-name,
+.segment > .segment-value {
+  width: 30%;
 }
 
 .segment > .segment-delete {
-  color: red;
+  color: hsl(0, 100%, 50%);
+}
+
+#parse_url {
+  background: hsl(51, 100%, 50%);
 }
 
 #parameter_add {
-  color: green;
+  color: hsl(120, 100%, 35%);
+}
+
+.highlight {
+  background: hsl(60, 80%, 90%);
 }
