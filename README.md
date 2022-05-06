@@ -2,4 +2,4 @@
 
 A simple web application for building HTTP querystrings.
 
-https://campbellbrendene.github.io/querystring-builder/
+https://bren0xa.github.io/querystring-builder/
